@@ -26,8 +26,8 @@ public class MyArrayList<T> implements IList<T> {
         if(this.size == this.elements.length) { // 기존 배열이 꽉차면 배열의 크기를 늘려주면서 복사한다.
             this.elements = Arrays.copyOf(this.elements, this.size * 2);
         }
-        for(int i = index; i < this.size; i++){ // 요소를 삽입할 때 index 위치에서부터 뒤로 밀어야함.
-            this.elements[i + 1] = this.elements[i]; // ?? 뒤에서부터 땡겨야되는 거 아님 ? 이렇게 되면 최초 i가 계속 복사되잖아.
+        for(int i = this.size + 1; i > index - 1; i--){ // 요소를 삽입할 때 index 위치에서부터 뒤로 밀어야함.
+            this.elements[i + 1] = this.elements[i];
         }
         this.elements[index] = t;
         this.size++;
