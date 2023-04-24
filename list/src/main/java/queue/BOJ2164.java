@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class boj2164 {
+public class BOJ2164 {
 
     public static void main(String[] args) {
 

@@ -3,7 +3,7 @@ package stack;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class boj9012 {
+public class BOJ9012 {
 
     public static void foo(String s) {
         Stack<Character> st = new Stack<>();

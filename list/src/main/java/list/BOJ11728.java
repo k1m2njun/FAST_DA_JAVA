@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class boj11728 {
+public class BOJ11728 {
 
     public static void main(String[] args) {
 
